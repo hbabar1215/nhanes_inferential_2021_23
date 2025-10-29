@@ -25,11 +25,13 @@ NHANES Data: [NHANES Data](https://wwwn.cdc.gov/nchs/nhanes/continuousnhanes/def
 
   **Question 3: How do age and marital status affect systolic blood pressure?**
 - First, I had to combine the BPXO and DEMO data into one table. I kept the `RIDAGEYR` (age), `DMDMARTZ` (marital status, recoded), and `BPXOSY3` (systolic blood pressure) columns. I recoded the marital status and removed missing data. I compared the mean BP between both groups and ran an **independent t-test**. The married individuals had a mean systolic blood pressure of 122.61 while unmarried had a mean systolic blood pressure of 122.85. The results indicated no statistically significant difference between the two groups, *(t = –0.50, p = 0.616)*. This shows us that marital status does not effect systolic blood pressure.
-- To see if age `RIDAGEYR` affects systolic blood I ran a **Pearson Correlation test**. This showed a positive correlation between age and systolic blood pressure *(r = 0.365, p < 0.001)*. This tells us that as age increases, systolic blood pressure increases.
+- To see if age `RIDAGEYR` affects systolic blood, I ran a **Pearson Correlation test**. This showed a positive correlation between age and systolic blood pressure *(r = 0.365, p < 0.001)*. This tells us that as age increases, systolic blood pressure increases.
 
 **Question 4: Is there a correlation between self-reported weight and minutes of sedentary behavior?**
 - First, I had to combine WHQ and PAQ data so that I could analyze the `(WHD020)` and `(PAD680)` variables. I then merged the data to create one table consisting of both columns `(df_question4)`. I then cleaned the data to remove values 7777, 9999, null values, and missing data. I then completed a **Pearson Correlation test** to see whether there was a correlation between the two variables. The results suggested there is no correlation between self-reported weight and minutes of sedentary behavior as the Pearson correlation coefficient is 0.1560. This means that these variables dont have an effect on one another.
 
-**Question 5: Do women who work more than 35 hours a week report greater feelings of tiredness or having little energy than women who work fewer than 35 hours per week?**
-- 
+**Question 5: Do married women report greater feelings of tiredness or having little energy than unmarried women?**
+- First I had to combine DPQ and DEMO data so I could analyze `DPQ040`(tiredness question), `DMDMARTZ` (marital status) and `RIAGENDR`(gender). Then I merged the data together to create one table that consists of the three columns. I also recoded the marital status and removed missing data. I compared the mean tiredness response to this question and ran an **independent t-test**. This showed a significant difference between the two groups *(t = –6.50, p < 0.001)*.
+Married women reported lower tiredness (M = 0.86) compared to unmarried women (M = 1.09) in this sample which I found surprising. 
+
   
