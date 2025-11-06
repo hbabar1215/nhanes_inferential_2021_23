@@ -35,5 +35,5 @@ NHANES Data: [NHANES Data](https://wwwn.cdc.gov/nchs/nhanes/continuousnhanes/def
 Married women reported lower tiredness (M = 0.86) compared to unmarried women (M = 1.09) in this sample which I found surprising. 
 
 ## Python vs. R 
-I liked using Python more for this assignment as we've been using it since the beginning of the year. I have more experience with it. R was a bit confusing due to the syntax and the way commands are called. Since R is mostly utilized in sciences for data analysis, I would like to become more proficient at using it. With more practice I believe R will become easier to use, but for now I prefer Python.
+I liked using Python more for this assignment as we've been using it since the beginning of the year. I have more experience with it. R was a bit confusing due to the syntax and the way commands are called. Additionally, for number 5 I there was a small difference in the number of unmarried people. When using Python I got 1416 but when using R I got 1418 unmarried people. This might be due to the way data is cleaned in both languages. However, since R is mostly utilized in sciences for data analysis, I would like to become more proficient at using it. With more practice I believe R will become easier to use, but for now I prefer Python.
   
