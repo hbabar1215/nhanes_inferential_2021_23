@@ -34,4 +34,6 @@ NHANES Data: [NHANES Data](https://wwwn.cdc.gov/nchs/nhanes/continuousnhanes/def
 - First I had to combine DPQ and DEMO data so I could analyze `DPQ040`(tiredness question), `DMDMARTZ` (marital status) and `RIAGENDR`(gender). Then I merged the data together to create one table that consists of the three columns. I also recoded the marital status and removed missing data. I compared the mean tiredness response to this question and ran an **independent t-test**. This showed a significant difference between the two groups *(t = –6.50, p < 0.001)*.
 Married women reported lower tiredness (M = 0.86) compared to unmarried women (M = 1.09) in this sample which I found surprising. 
 
+## Python vs. R 
+I liked using Python more for this assignment as we've been using it since the beginning of the year. I have more experience with it. R was a bit confusing due to the syntax and the way commands are called. Since R is mostly utilized in sciences for data analysis, I would like to become more proficient at using it. With more practice I believe R will become easier to use, but for now I prefer Python.
   
